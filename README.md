@@ -13,7 +13,7 @@ This project contains an end-to-end ETL (Extract, Transform, Load) pipeline and 
 ### 1.1. Clone the Repository
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/erdrinkaja/etl_reporting.git
 cd etl_reporting
 ````
 
