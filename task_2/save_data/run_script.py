@@ -32,7 +32,6 @@ def run_etl(csv_file, db, conn_str):
         df_clean = clean_sales_data(df, csv_file, rates)
 
         load_to_sqlite(df_clean, db, rates)
-
         mark_as_processed(csv_file)
         logging.info("ETL completed successfully for file: %s", csv_file)
         print("ETL completed successfully.")
