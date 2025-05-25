@@ -51,7 +51,7 @@ monthly_summary = (
     df_sales.groupby('order_month')
         .agg(
             total_sales_usd=pd.NamedAgg(column='sales_amount_usd', aggfunc='sum'),
-            order_count=pd.NamedAgg(column='id', aggfunc='count')
+            order_count=pd.NamedAgg(column='order_id', aggfunc='count')
         )
         .reset_index()
 )

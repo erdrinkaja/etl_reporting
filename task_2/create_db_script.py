@@ -21,8 +21,7 @@ def create_schema_sqlite():
         """,
         "sales": """
             CREATE TABLE sales (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                order_id INT NOT NULL,
+                order_id INT NOT NULL PRIMARY KEY,
                 affiliate_name TEXT NOT NULL,
                 category TEXT NOT NULL,
                 sales_amount REAL NOT NULL,
@@ -47,6 +46,9 @@ def create_schema_sqlite():
 
     # join by date+currency:
     cur.execute("CREATE INDEX IF NOT EXISTS idx_exchange_rates_date_currency ON exchange_rates(date, currency);")
+
+    # join by id:
+    cur.execute("CREATE INDEX IF NOT EXISTS idx_exchange_rates_id ON exchange_rates(id);")
 
     conn.commit()
     conn.close()
