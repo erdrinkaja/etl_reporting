@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+.venv/
+env/
+venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VSCode settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# MacOS hidden files
+.DS_Store
+
+# Environment variables
+.env
+
+# Reports and outputs
+reports/
+*.pdf
+*.csv
+
+# Pickle files
+*.pkl
+pickles/
+task_1/pickles/
+task_two/pickles/
+task_2/save_data/pickles/
+
+# Log files
+*.log
+etl.log
+
+# Test/data files
+test_data.csv
+*.sqlite
+*.db
+
+# Ignore your database files by pattern
+*.db
+*.sqlite3
+
+# Ignore screenshots and images (optional)
+*.png
+*.jpg
+*.jpeg
+*.gif
