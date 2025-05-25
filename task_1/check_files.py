@@ -2,7 +2,7 @@ import os
 import json
 
 # JSON file to store metadata about already processed files
-TRACKING_FILE = "processed_files.json"
+TRACKING_FILE = "processed_files_task_one.json"
 
 def is_already_processed(file_path):
     """
