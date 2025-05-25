@@ -66,7 +66,7 @@ CSV_DATA=/Users/your_path/etl_reporting/task_1/test_data.csv
 1. Run the database schema creation script:
 
    ```bash
-   python task_2/save_data/create_db_script.py
+   python task_2/create_db_script.py
    ```
 
    This creates the optimized tables and indexes in the database specified by `SQLITE_DB_PATH_TWO`.
